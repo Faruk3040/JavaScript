@@ -232,3 +232,132 @@ if (BMIMark > BMIJohn) {
 } else {
     console.log(`John's BMI (${BMIJohn}) is higher than Mark's(${BMIMark})!`);
 }
+
+//convert string to number && number to string
+
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(String(23), 23);
+
+//type coercion
+console.log('I am ' + 23 + ' years old ');
+console.log('I am ' + '23' + ' years old ');
+console.log('23' - '10' - 3);
+console.log('23' * '2');
+console.log('23' / '2');
+console.log('23' > '18');
+
+// 5 flasy value 0 , '', undefine, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('faruk'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all🙂");
+} else {
+    console.log("You should get a job");
+}
+
+let height;
+if (height) {
+    console.log("Height is defined");
+} else {
+    console.log("Height is undefined");
+}
+
+//equality operator
+/*
+const age = '18';
+if (age === 18) console.log("You just became an adult ✌ (strict)");
+
+if (age == 18) console.log("You just became an adult ✌ (loose)");
+
+const favourit = Number(prompt("What's your favourit number")); //jodi === use kori then promt er agay Number command use korte hobe ar jodi == use kori then Number use korra lagbe.
+console.log(favourit);
+console.log(typeof favourit);
+if (favourit === 7) { // '23' == 23 (== dairak string ke number e convert kore but === pare na convert korte)
+    console.log('Cool! 7 is an amazing number');
+}
+*/
+
+const hasDriversLicense = true //false  //A
+const hasGoodVision = true //false  //B
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+
+
+//if (hasDriversLicense && hasGoodVision) {
+//   console.log('Sara is able to drive!');
+//} else {
+//  console.log('someone else should drive...');
+//}
+
+/*const isTired = true //C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && isTired) {
+    console.log('Sara is able to drive!');
+} else {
+    console.log('someone else should drive...');
+}
+*/
+const scoreDolphins = (96 + 108 + 96) / 3;
+const scoreKoalas = (88 + 110 + 110) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+    console.log('Dolphins win the trophy🏆');
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+    console.log('Koals win the trophy🏆');
+} else if (scoreDolphins === scoreKoalas) {
+    console.log('Both win the trophy');
+}
+
+//switch statement
+
+const day = 'friday';
+
+switch (day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
+
+if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples');
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend :D');
+} else {
+    console.log('Not a valid day!');
+}
